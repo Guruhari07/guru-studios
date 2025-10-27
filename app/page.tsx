@@ -1,15 +1,19 @@
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
-import Contact from '../components/Contact';
+"use client";
+
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <>
+      <Navbar />
       <Hero />
       <About />
       <Services />
       <Contact />
-    </main>
+    </>
   );
 }

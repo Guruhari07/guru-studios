@@ -1,19 +1,14 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Guru Studios",
-  description: "Creative Landing Page built with Next.js",
+  description: "Creative agency making digital experiences",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-black text-white">
+      <body className="bg-gradient-to-br from-[#1344ad] via-[#0b8181] to-[#5c2c64] text-white scroll-smooth font-bold">
         {children}
       </body>
     </html>
